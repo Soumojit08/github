@@ -1,27 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;400;600;700;900&display=swap');
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: cursive;
+    font-family: 'Inter', sans-serif;
 }
 
-body {
+body{
+    background-color: #F1F2F4;
     position: relative;
-    background-image: url(background.webp); /* Replace 'your-image-url.jpg' with the actual URL or path to your image */
-    background-size: cover;
-    background-repeat: no-repeat;
+}
+
+header {
+    width: 100%;
+    height: 70px;
+    padding: 0 30px;
+    background-color: #fff;
+}
+
+#navbar {
     display: flex;
     align-items: center;
-    justify-content: center;
-    padding: 150px;
+    justify-content: space-evenly;
+    background-color: #fff;
 }
 
-.content {
-    height: 450px;
-    width: 450px;
-    border-radius: 10px;
-    background-color: rgba(255, 255, 255, 0.11);
-    backdrop-filter: blur(10px);
-    text-align: center;
-    padding: 80px;
+#navbar ul {
+    display: flex;
+}
+
+#navbar ul li {
+    list-style: none;
+    margin: 0 15px;
+    display: flex;
+    align-items: center;
+}
+
+#navbar ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+.logo img {
+    height: 65px;
+    width: 130px;
+}
+
+.search {
+    display: flex;
+}
+
+.search input {
+    padding: 10px 200px;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    border: none;
+    background-color: #F0F5FF;
+}
+
+.search i {
+    background-color: #F0F5FF;
+    font-size: 25px;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    padding: 3px ;
+}
+
+.search i:hover {
+    cursor: pointer;
+}
+
+.search input:focus {
+    outline: none;
+}
+
+.options{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.options i {
+    font-size: 25px;
+}
+
+.options i:hover {
+    cursor: pointer;
+}
+
+.options button:hover{
+    background-color: #2A55E5;
+    color: white;
+}
+
+.options button {
+    border: none;
+    background-color: #F0F5FF;
+    padding: 10px 20px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+}
+
+.options button a {
+    text-decoration: none;
+    margin: 0 3px;
+    color: black;
 }
