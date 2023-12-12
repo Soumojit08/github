@@ -10,6 +10,7 @@
 body {
   background-color: #f1f2f4;
   position: relative;
+  overflow-x: hidden;
 }
 
 header {
@@ -133,11 +134,11 @@ header {
 }
 
 .items {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
 }
 
 /* End of the itembox section and starting of the hero section */
@@ -152,7 +153,7 @@ header {
   padding: 0 10px;
 }
 
-.hero-image img{
+.hero-image img {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -181,6 +182,82 @@ header {
   position: absolute;
   top: 50%;
   left: 100%;
+  transform: translate(-50%, -50%);
+  border: none;
+  background-color: #fff;
+  padding: 30px 10px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.hero-offer,
+.offer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hero-offer img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 98%;
+  object-fit: cover;
+}
+
+/* End of the hero section and starting of the about section */
+
+.mobile-sec {
+  background-color: #fff;
+  margin: 10px 16px;
+  height: 335px;
+  width: 80%;
+}
+
+#mob-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 30px;
+}
+
+#mob-head i {
+  background-color: #1c41d6;
+  border: none;
+  border-radius: 60%;
+  padding: 6px 8px;
+  color: #fff;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.mob-var {
+  position: relative;
+  display: flex;
+  height: 240px;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.phones {
+  border: 1px solid rgba(128, 128, 128, 0.697);
+  height: 100%;
+  width: 15%;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.phones img {
+  object-fit: cover;
+  width: 50%;
+}
+
+.mob-var button {
+  position: absolute;
+  top: 50%;
+  left: 98%;
   transform: translate(-50%, -50%);
   border: none;
   background-color: #fff;
