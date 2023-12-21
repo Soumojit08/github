@@ -25,11 +25,11 @@ const images = [
 let currentImageindex = 0;
 
 btnRight.addEventListener("click", () => {
-  currentImageindex = (currentImageindex + 1)%images.length;
+  currentImageindex = (currentImageindex + 1) % images.length;
   img1.setAttribute("src", images[currentImageindex]);
 });
 
 btnLeft.addEventListener("click", () => {
-  currentImageindex = (currentImageindex + images.length - 1)%images.length;
+  currentImageindex = (currentImageindex + images.length - 1) % images.length;
   img1.setAttribute("src", images[currentImageindex]);
 });
